@@ -23,11 +23,7 @@ class App extends React.Component {
     console.log(this.showTime);
   }
 
-  showDate() {  const people = ['Rowe', 'Prevost', 'Gare'];
-
-  const peopleLis = people.map((person, i) => <li key={'person_' + i}>{person}</li>);
-
-  console.log(peopleLis);
+  showDate() {  
       let currentDate = new Date()
       let formattedDate = currentDate.toDateString();
       this.setState({
